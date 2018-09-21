@@ -4,10 +4,12 @@
     "description": "Protect users privacy by truncating their IP addresses",
     "main": "index.js",
     "directories": {
-        "test": "test"
+        "test": "nyc mocha test --check-leaks",
+        "test-ci": "nyc report --reporter=text-lcov | coveralls"
     },
     "dependencies": {},
     "devDependencies": {
+        "coveralls": "^3.0.2",
         "mocha": "^5.2.0",
         "nyc": "^13.0.1"
     },
