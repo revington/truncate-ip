@@ -1,0 +1,29 @@
+{
+    "name": "truncate-ip",
+    "version": "1.0.0",
+    "description": "Protect users privacy by truncating their IP addresses",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "mocha": "^5.2.0",
+        "nyc": "^13.0.1"
+    },
+    "scripts": {
+        "test": "mocha test --check-leaks",
+        "test-ci": "nyc mocha test --check-leaks"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/revington/truncate-ip.git"
+    },
+    "keywords": [],
+    "author": "Pedro Narciso García Revington <p.revington@gmail.com> (https://github.com/revington)",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/revington/truncate-ip/issues"
+    },
+    "homepage": "https://github.com/revington/truncate-ip#readme"
+}
