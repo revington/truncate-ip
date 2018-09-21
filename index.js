@@ -9,7 +9,6 @@ function truncateIPv4(ip) {
 
 function truncateIPv6(ip) {
     const ret = ip.match(reV6);
-
     return ret && ret[0] + ':';
 }
 
