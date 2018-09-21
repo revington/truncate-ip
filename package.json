@@ -1,6 +1,6 @@
 {
     "name": "truncate-ip",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Protect users privacy by truncating their IP addresses",
     "main": "index.js",
     "directories": {

@@ -14,10 +14,6 @@ function truncateIPv6(ip) {
 }
 
 function truncate(ip) {
-    var ret;
-    if ((ret = truncateIPv4(ip))) {
-        return ret;
-    }
-    return truncateIPv6(ip);
+    return truncateIPv4(ip) || truncateIPv6(ip);
 }
 exports = module.exports = truncate;
